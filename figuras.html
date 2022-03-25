@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navegacion">
+        <h1 class="navegacion__titulo">MathBot</h1>
+        <img src="./img/calculator.png" alt="LogoCalculator" class="navegacion__image">
+        <p class="navegacion__parrafo">Tu asistente de matematicas virtual</p>
+    </nav>
+    <main class="contenedor-principal">
+            <div class="Geometria">
+                <div class="cuadrado figuras">
+                    <h1>Cuadrado</h1>
+                    <label for="inputCuadrado">Cuanto mide cada lado de tu cuadrado?</label>
+                    <input type="number" id="inputCuadrado">  
+                    <div class="buttons">
+                        <button type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
+                        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perimetro</button>
+                    </div>
+                    <div id="resultadoPerimetroCuadrado"></div>
+                    <div id="resultadoAreaCuadrado"></div>
+                </div>
+                <div class="triangulo figuras">
+                    <h1>Triangulo</h1>
+                    <p>Tipo de triangulo: isósceles</p>
+                    <label for="inputTrianguloLadoA">ingresa el lado a (base):</label>
+                    <input type="number" id="inputTrianguloLadoA">
+                    <label for="inputTrianguloLadoB">ingresa el lado b:</label>
+                    <input type="number" id="inputTrianguloLadoB">
+                    <div class="buttons">
+                        <button type="button" onclick="alturaTrianguloIsósceles()">Calcular altura</button>
+                        <button type="button">Calcular Perimetro</button>
+                        <button type="button">Calcular Area</button>
+                    </div>
+                    <div id="altura"></div>
+                </div>
+            </div>
+    </main>
+    <script src="./figuras.js"></script>
+</body>
+</html>

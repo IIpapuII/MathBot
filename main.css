@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700;900&display=swap');
+/* #eecbff           #feffa3                 #dbdcff */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Inconsolata', monospace;
+    font-size: 62.5;
+}
+.navegacion{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.navegacion__image{
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: .2rem;
+}
+.navegacion__titulo{
+    font-size: 2.5rem;
+    padding: .2rem;
+}
+.navegacion__parrafo{
+    width: 16rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: .8rem;
+}
+.Geometria{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 0 auto;   
+}
+.cuadrado{
+    background: #ffd4e5;
+}
+.triangulo{
+    background:	#d4ffea;
+}
+.figuras{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap : 1rem;
+    border-radius: 10px;
+    padding: .8rem;
+}
+.figuras h1{
+    text-align: center;
+    margin: 1rem;
+}
+.figuras label{
+    text-align: center;
+}
+.figuras input{
+    border: 1px solid #27272773;
+    height: 1.8rem;
+    border-radius: .5rem;
+
+}
+.buttons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.buttons button{
+    width: 5rem;
+    height: 2.5rem;
+}

@@ -1,4 +1,4 @@
-# platzi-curso-practico-javascript
+# MathBot
 
 
 

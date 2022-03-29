@@ -16,7 +16,7 @@ html{
     margin: 0 auto;
     padding: 0 20px;
     justify-content: space-between;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 }
 .navegacion__image{
     width: 3.5rem;
@@ -28,22 +28,41 @@ html{
     padding: .2rem;
 }
 .navegacion__parrafo{
-    width: 16rem;
-    font-size: 1rem;
+    width: 100%;
+    font-size: 2.5rem;
     text-align: center;
     padding: .8rem;
     margin: 0 auto;
-    
+}
+.navegacion__parrafo p{
+    font-size: 4rem;
+    text-align: center;
+    height:8rem;
+    margin: 0 0 2.5rem 0; 
+    line-height: 5rem;
+    color: #fcedd8;
+    background: #d52e3f;
+    font-family: 'Niconne', cursive;
+    font-weight: 700;
+    text-shadow:5px 5px 0px #eb452b, 
+                10px 10px 0px #efa032, 
+                15px 15px 0px #46b59b, 
+                20px 20px 0px #017e7f, 
+                25px 25px 0px #052939, 
+                30px 30px 0px #c11a2b, 
+                35px 35px 0px #c11a2b, 
+                40px 40px 0px #c11a2b, 
+                45px 45px 0px #c11a2b;
 }
 .Geometria{
     width: 100%;
     max-width: 1350px;
-    display: grid; 
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap; 
     gap: 20px 20px;
     margin: 0 auto;
 }
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
     .Geometria { grid-template-columns: 1fr 1fr; }
     .navegacion__parrafo{
         margin: 0;
@@ -55,7 +74,7 @@ html{
     .navegacion__parrafo{
         margin: 0;
     }
-}
+} */
 
   /* Screen larger than 900px? 3 columns */
 /* @media (min-width: 900px) {
@@ -66,6 +85,9 @@ html{
 }
 .triangulo{
     background:	#d4ffea;
+}
+.contenedor-principal{
+    margin: 1rem 0;
 }
 .figuras{
     width: 412px;

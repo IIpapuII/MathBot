@@ -11,8 +11,11 @@
     <nav class="navegacion">
         <h1 class="navegacion__titulo">MathBot</h1>
         <img src="./img/calculator.png" alt="LogoCalculator" class="navegacion__image">
-        <p class="navegacion__parrafo">Tu asistente de matematicas virtual</p>
     </nav>
+    <div class="navegacion__parrafo">
+        <p>Tu asistente de matematicas virtual...</p>
+    </div>
+
     <main class="contenedor-principal">
             <section class="Geometria">
                 <div class="cuadrado figuras">
@@ -35,8 +38,6 @@
                     <input type="number" id="inputTrianguloLadoB">
                     <div class="buttons">
                         <button type="button" onclick="alturaTrianguloIsósceles()">Calcular altura</button>
-                        <button type="button">Calcular Perimetro</button>
-                        <button type="button">Calcular Area</button>
                     </div>
                     <div id="altura"></div>
                 </div>
@@ -51,6 +52,22 @@
                     </div>
                     <p id="descuentoValor"></p>
                 </div>
+                <div class="figuras dos Cupones">
+                    <h1>Cupones</h1>
+                    <label for="valorProducto">ingresa el valor del producto:</label>
+                    <input type="number" id="valorProducto">
+                    <label for="CuponProducto">ingresa el Cumpon:</label>
+                    <input type="number" id="CuponProducto">
+                    <div class="buttons"> 
+                        <button onclick="descuento()">Precio final</button>
+                    </div>
+                    <p id="descuentoValor"></p>
+                </div>
+                <div class="figuras dos"></div>
+                <div class="figuras dos"></div>
+                <div class="figuras dos"></div>
+                <div class="figuras dos"></div>
+                <div class="figuras dos"></div>
                 <div class="figuras dos"></div>
             </section>
     </main>

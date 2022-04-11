@@ -4,74 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras geometricas</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Math-bot</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <nav class="navegacion">
-        <h1 class="navegacion__titulo">MathBot</h1>
-        <img src="./img/calculator.png" alt="LogoCalculator" class="navegacion__image">
-    </nav>
-    <div class="navegacion__parrafo">
-        <p>Tu asistente de matematicas virtual...</p>
-    </div>
+    <main class="main__container">
+        <nav class="navegacion">
+            <ul class="navegacion__items">
+                <li class="item">
+                    <a href="#">
+                        <img src="./assets/img/figura.svg" alt="">
+                    </a> 
+                </li>
+                <li class="item item--descuento">
+                    <a href="#">
+                        <img src="./assets/img/Descuento.svg" alt="">
+                    </a> 
+                </li>
+                <li class="item item--home">
+                    <a href="./index.html">
+                        <img src="./assets/img/home.svg" alt="">
+                    </a> 
+                </li>
+                <li class="item">
+                    <a href="https://github.com/jonniermartinez/MathBot" target="__blank">
+                        <img src="./assets/img/github.png" alt="">
+                    </a> 
+                </li>
+            </ul>
+        </nav>
+        <section class="user">
+            <div class="user__content">
+                <img src="./assets/img/robot.png" alt="Math-bot">
+                <div class="user__text">
+                    <h1>Math-Both</h1>
+                    <p>Asistente de Matematicas Virtual</p>
+                </div>
+            </div>
+        </section>
+        <section class="Content">
+            <h1 class="content-title">Curso prantico de javaScrip</h1>
+            <h3>Trabajo practico - Platzi</h3>
+            <ul class="list-content">
 
-    <main class="contenedor-principal">
-            <section class="Geometria">
-                <div class="cuadrado figuras">
-                    <h1>Cuadrado</h1>
-                    <label for="inputCuadrado">Cuanto mide cada lado de tu cuadrado?</label>
-                    <input type="number" id="inputCuadrado">  
-                    <div class="buttons">
-                        <button type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
-                        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perimetro</button>
-                    </div>
-                    <p id="resultadoPerimetroCuadrado"></p>
-                    <p id="resultadoAreaCuadrado"></p>
-                </div>
-                <div class="triangulo figuras">
-                    <h1>Triangulo</h1>
-                    <p>Tipo de triangulo: isósceles</p>
-                    <label for="inputTrianguloLadoA">ingresa el lado a (base):</label>
-                    <input type="number" id="inputTrianguloLadoA">
-                    <label for="inputTrianguloLadoB">ingresa el lado b:</label>
-                    <input type="number" id="inputTrianguloLadoB">
-                    <div class="buttons">
-                        <button type="button" onclick="alturaTrianguloIsósceles()">Calcular altura</button>
-                    </div>
-                    <div id="altura"></div>
-                </div>
-                <div class="figuras porcentajes">
-                    <h1>Porcentajes y descuentos</h1>
-                    <label for="valorProducto">ingresa el valor del producto:</label>
-                    <input type="number" id="valorProducto">
-                    <label for="porcentajeProducto">ingresa el descuento del producto en %:</label>
-                    <input type="number" id="porcentajeProducto">
-                    <div class="buttons"> 
-                        <button onclick="descuento()">Precio final</button>
-                    </div>
-                    <p id="descuentoValor"></p>
-                </div>
-                <div class="figuras dos Cupones">
-                    <h1>Cupones</h1>
-                    <label for="valorProducto">ingresa el valor del producto:</label>
-                    <input type="number" id="valorProducto">
-                    <label for="CuponProducto">ingresa el Cumpon:</label>
-                    <input type="number" id="CuponProducto">
-                    <div class="buttons"> 
-                        <button onclick="descuento()">Precio final</button>
-                    </div>
-                    <p id="descuentoValor"></p>
-                </div>
-                <div class="figuras dos"></div>
-                <div class="figuras dos"></div>
-                <div class="figuras dos"></div>
-                <div class="figuras dos"></div>
-                <div class="figuras dos"></div>
-                <div class="figuras dos"></div>
-            </section>
+            <li class="items">
+                <a href="./Taller1.html">
+                    <img src="./assets/img/cubo.png" alt="">
+                    <h1>Figuras Geometricas</h1>
+                </a>
+            </li>
+                <li class="items">
+                    <a href="./taller2.html">
+                    <img src="./assets/img/signo-de-dolar.png" alt="">
+                    <h1>Precios y descuentos</h1>
+                </a>
+            </li>
+                <li class="items">
+                    <a href="./taller3.html">
+                    <img src="./assets/img/investigacion-de-mercado.png" alt="">
+                    <h1>Media, Moda y Mediana en números enteros</h1>
+                </a>
+            </li>
+            <li class="items">
+                    <a href="./taller4.html">
+                    <img src="./assets/img/analisis.png" alt="">
+                    <h1>Análisis Salarial</h1>
+                    </a>
+            </li>
+            </ul>
+        </section>
     </main>
-    <script src="./porcentajes.js"></script>
-    <script src="./figuras.js"></script>
 </body>
 </html>

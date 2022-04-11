@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math-bot</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/tallere.css">
+</head>
+<body>
+    <main class="main__container">
+        <section class="user">
+            <div class="user__content">
+                <img src="./assets/img/robot.png" alt="Math-bot">
+                <div class="user__text">
+                    <h1>Math-Both</h1>
+                    <p>Asistente de Matematicas Virtual</p>
+                </div>
+                <div class="item item--home">
+                    <a href="./index.html">
+                        <img src="./assets/img/home.svg" alt="">
+                    </a> 
+                </div>
+                <div class="item">
+                    <a href="https://github.com/jonniermartinez/MathBot" target="__blank">
+                        <img src="./assets/img/github.png" alt="">
+                    </a> 
+                </div>
+            </div>
+        </section>
+        <section class="Content">
+            <h1 class="content-title">Figura Geometricas</h1>
+            <h3>Trabajo practico - Platzi</h3>
+            
+            <div class="taller">
+                <!-- TRIANGULOS  -->
+                <section class="taller-card">
+                    <h2>Triangulos</h2>
+                    <form id="triangulos">
+                        <div class="form-group">
+                            <label for="inputTriangulo1">Ingrese <strong> Lado A</strong> en cm:</label>
+                            <input type="number" name="lado" id="inputTriangulo1" min="1">
+                            <p id="errorT1" class="error"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputTriangulo2">Ingrese <strong> Lado B</strong> en cm:</label>
+                            <input type="number" name="lado" id="inputTriangulo2" min="1">
+                            <p id="errorT2" class="error"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputBase">Ingrese <strong> Base</strong> en cm:</label>
+                            <input type="number" name="lado" id="inputBase" min="1">
+                            <p id="errorTBase" class="error"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAltura">Ingrese <strong> Altura</strong> en cm:</label>
+                            <input type="number" name="lado" id="inputAltura" min="1">
+                            <p id="errorTAltura" class="error"></p>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn-form " type="button" onclick="perimetroTriangulo()">Calcular el perimetro</button>
+                            <button class="btn-form" type="button" onclick="areaTriangulo()">calcular el area</button>
+                        </div>
+                        <div class="form-group">
+                            <p id="resultadoTrianguloPerimetro"></p>
+                            <p id="resultadoTrianguloArea"></p>
+                        </div>
+                    </form>
+                </section>
+                <!-- CUADRADOS Y RECTANGULOS  -->
+                <section  class="taller-card">
+                    <h2>Cuadrados</h2>
+                    <form id="cuadrados">
+                        <div class="form-group">
+                            <label for="inputCuadrado">Ingrese el <strong> Lado</strong> en cm:</label>
+                            <input type="number" name="lado" id="inputCuadrado" min="1">
+                            <p class="error" id="errorCL1"></p>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn-form" type="button" onclick="calcularPerimetroCuadrado();">Calcular el perimetro</button>
+                            <button class="btn-form" type="button" onclick="calcularAreaCuadrado();">Calcular el area</button>
+                        </div>
+                        <div class="form-group">
+                            <p id="resultadoPerimetroCuadrado"></p>
+                            <p id="resultadoAreaCuadrado"></p>
+                        </div>
+                    </form>
+                </section>
+                <!-- CIRCULOS  -->
+                <section class="taller-card">
+                    <h2>Circulos</h2>
+                    <form id="circulos">
+                        <div class="form-group">
+                            <label for="inputCirculo">Ingrese el <strong> Radio</strong> en cm:</label>
+                            <input type="number" name="lado" id="inputCirculo" min="1">
+                            <p class="error" id="errorCirculo"></p>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn-form" type="button" onclick="perimetroCirculo();">Calcular el Perimetro</button>
+                            <button class="btn-form" type="button" onclick="areaCirculo();">calcular el Area</button>
+                            <button class="btn-form" type="button" onclick="diametroCirculo();">Calcular el Diametro</button>
+                        </div>
+                        <div class="form-group">
+                            <p id="resultadoPerimetroCiculo"></p>
+                            <p id="resultadoAreaCirculo"></p>
+                            <p id="resultadoDiametroCirculo"></p>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/figuras.js"></script>
+</body>
+</html>

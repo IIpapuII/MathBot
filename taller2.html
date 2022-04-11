@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math-bot</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/tallere.css">
+</head>
+<body>
+    <main class="main__container">
+        <section class="user">
+            <div class="user__content">
+                <img src="./assets/img/robot.png" alt="Math-bot">
+                <div class="user__text">
+                    <h1>Math-Both</h1>
+                    <p>Asistente de Matematicas Virtual</p>
+                </div>
+                <div class="item item--home">
+                    <a href="./index.html">
+                        <img src="./assets/img/home.svg" alt="">
+                    </a> 
+                </div>
+                <div class="item">
+                    <a href="https://github.com/jonniermartinez/MathBot" target="__blank">
+                        <img src="./assets/img/github.png" alt="">
+                    </a> 
+                </div>
+            </div>
+        </section>
+        <section class="Content">
+            <h1 class="content-title">Precios y descuentos</h1>
+            <h3>Trabajo practico - Platzi</h3>
+            
+            <div class="taller">
+                <section id="precios-descuentos" class="taller-card">
+                    <img src="assets/img/price.png" alt="">
+                    <h2>Cálculos</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="inputPrice">Escribe el <strong>Precio</strong> de tu producto</label>
+                            <input type="number" id="inputPrice" min="1">
+                            <p class="error" id="errorPrice"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDiscount">Escribe el <strong>Descuento</strong> de tu producto</label>
+                            <input type="number" id="inputDiscount" min="0">
+                            <p class="error" id="errorDiscount"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPrice">Escribe el <strong>Cupón</strong> si tienes</label>
+                            <input type="text" id="inputCoupon">
+                            <p class="error" id="errorCoupon"></p>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn-form" type="button" onclick="descuento();"> Calcuar precio con descuento</button>
+                            <button class="btn-form" type="button" onclick="calcularPrecioConCupon();"> Calcuar precio con Cupón</button>
+                        </div>
+                        <div class="form-group">
+                            <p id="descuentoValor"></p>
+                            <p id="descuentoCupon"></p>
+                        </div>
+                        
+                    </form>
+                </section>
+                <section id="triangulos" class="taller-card">
+                    <h2>Lista de Cupones disponibles</h2>
+                    <ul>
+                        <li>Promo10</li>
+                        <li>Promo20</li>
+                        <li>Promo30</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/porcentajes.js"></script>
+</body>
+</html>

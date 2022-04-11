@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math-bot</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/tallere.css">
+</head>
+<body>
+    <main class="main__container">
+        <section class="user">
+            <div class="user__content">
+                <img src="./assets/img/robot.png" alt="Math-bot">
+                <div class="user__text">
+                    <h1>Math-Both</h1>
+                    <p>Asistente de Matematicas Virtual</p>
+                </div>
+                <div class="item item--home">
+                    <a href="./index.html">
+                        <img src="./assets/img/home.svg" alt="">
+                    </a> 
+                </div>
+                <div class="item">
+                    <a href="https://github.com/jonniermartinez/MathBot" target="__blank">
+                        <img src="./assets/img/github.png" alt="">
+                    </a> 
+                </div>
+            </div>
+        </section>
+        <section class="Content">
+            <h1 class="content-title">Análisis Salarial</h1>
+            <h3>Trabajo practico - Platzi</h3>
+            <div class="taller">
+                <section class="taller-card">
+                    <img src="assets/img/dollar.png" alt="">
+                    <header>
+                        <h2>Cálculos:</h2>
+                        <div class="select">
+                            <select class="" id="formulaSelect" name="select" onchange="switchFormula();">
+                                <option value="1" selected>Mediana Salarial</option>
+                                <option value="2">Mediana Salarial TOP 10%</option>
+                            </select>
+                        </div>
+                    </header>
+                    <form id="form">
+                        <div class="form-group">
+                            <label class="check"><input type="checkbox" id="checkInput" value="" checked> Utilizar lista precargada para testeo</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPrice">Escribe un <strong> Nuevo Valor</strong> a la lista</label>
+                            <input type="number" id="addValue">
+                            <p class="error" id="errorAddValue"></p>
+                            <button class="btn-form" type="button" onclick="addListNumber();" min="0"> Agregar a la lista</button>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputDiscount">Escribe la <strong>Posición </strong> del valor a Eliminar de la lista</label>
+                            <input type="number" id="removeValue">
+                            <p class="error" id="errorRemoveValue"></p>
+                            <button class="btn-form btn-form--alert" type="button" onclick="removeListNumber();"> Quitar de la lista</button>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn-form" id="btn-render" type="button" onclick="renderMedianaSalarial();"> Calcular Mediana Salarial</button>
+                            <p class="error" id="errorList"></p>
+                        </div>
+                    </form>
+                </section>
+                <section class="taller-card">
+                    <h2>Lista de Valores Cargados</h2>
+                    <ul id="list-values">
+                    </ul>
+                </section>
+                <section class="taller-card">
+                    <h2>Lista de Valores precargados para testeo</h2>
+                    <ul id="list-values-default">
+                    </ul>
+                </section>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>
